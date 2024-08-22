@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    all: unset;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* ----------------------------------------------------- */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../assets/map.jpg);
+    padding: 10px;
+}
+
+.api {
+    background-color: white;
+    width: 80vw;
+    max-width: 600px;
+    padding: 50px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+}
+
+.search-wrap {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 30px;
+}
+
+.search-wrap button {
+    font-size: 16px;
+    background-color: rgb(80, 92, 78);
+    color: white;
+    padding: 14px 0;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.search-wrap input {
+    background-color: white;
+    font-size: 17px;
+    padding: 12px 12px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    border-bottom: 3px solid rgb(168, 150, 137);
+    color: rgb(80, 92, 78);
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.flag-img {
+    display: block;
+    width: 45%;
+    min-width: 130px;
+    margin: 28px auto 22px auto;
+}
+
+h2 {
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+h4 {
+    display: inline;
+    font-weight: 500;
+    color: black;
+}
+
+span {
+    color: rgb(80, 92, 78);
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* For tablets */
+@media (max-width: 768px) {
+    .search-wrap {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .search-wrap input {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .search-wrap button {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .api {
+        width: 90vw;
+        padding: 40px 30px;
+        transform: translate(-50%, -40%);
+    }
+
+    .flag-img {
+        width: 60%;
+        min-width: 100px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .search-wrap input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .search-wrap button {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .api {
+        width: 95vw;
+        padding: 30px 20px;
+        transform: translate(-50%, -30%);
+    }
+
+    .flag-img {
+        width: 70%;
+        min-width: 80px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
