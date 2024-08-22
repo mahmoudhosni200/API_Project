@@ -1,8 +1,8 @@
 let searchBtn = document.getElementById("search-btn");
 let countryInp = document.getElementById("country_inp");
-let result = document.getElementById("result"); // Ensure you have an element with id "result" to display the results
 
-// Function to handle the search
+
+
 function performSearch() {
     let countryName = countryInp.value;
     let finalUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
@@ -54,10 +54,8 @@ function performSearch() {
         });
 }
 
-// Add event listener for the button click
 searchBtn.addEventListener("click", performSearch);
 
-// Add event listener for Enter key press
 countryInp.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         performSearch();
